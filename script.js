@@ -15,7 +15,7 @@ function updateDebt() {
 }
 setInterval(updateDebt, 30);
 
-// Slides mit Leertaste und Tap
+// Slides: Steuerung mit Tastatur & Touch
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -45,7 +45,7 @@ document.addEventListener('touchstart', () => {
 
 showSlide(currentSlide);
 
-// Diagramme laden
+// Diagramme
 window.addEventListener("load", () => {
   const ctx1 = document.getElementById("vergleichChart")?.getContext("2d");
   if (ctx1) {
