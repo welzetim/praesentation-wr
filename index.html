@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Präsentation – Staatsverschuldung</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Live Counter -->
+  <div id="counter-container">
+    Staatsschulden Deutschlands:<br>
+    <span id="debt-counter">2.491.823.007.381 €</span><br><br>
+    Schulden seit Präsentationsbeginn:<br>
+    <span id="session-counter">0 €</span>
+  </div>
+
+  <!-- Slides -->
+  <section class="slide active" id="slide1">
+    <div class="headline">Was ist Staatsverschuldung?</div>
+    <div class="text">
+      <ul>
+        <li>Gesamtsumme der Verbindlichkeiten eines Staates</li>
+        <li>Wird aufgenommen durch Kredite und Anleihen</li>
+        <li>Beeinflusst Wirtschaft, Politik und zukünftige Generationen</li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <h3>Zinsausgaben vs. Investitionen (2024, in Mrd. €)</h3>
+      <canvas id="zinsChart"></canvas>
+    </div>
+  </section>
+
+  <section class="slide" id="slide2">
+    <div class="headline">Wie entsteht Staatsverschuldung?</div>
+    <div class="text">
+      <ul>
+        <li>Krisenfinanzierung (z. B. Finanzkrise, Corona)</li>
+        <li>Investitionen in Infrastruktur und Bildung</li>
+        <li>Längerfristige Haushaltsdefizite</li>
+        <li>Beispiel: Finanzkrise 2008 – Schuldenanstieg weltweit</li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <h3>Entwicklung der Staatsverschuldung Deutschlands (2000–2024)</h3>
+      <canvas id="entwicklungChart"></canvas>
+    </div>
+  </section>
+
+  <section class="slide" id="slide3">
+    <div class="headline">Aktuelle Lage</div>
+    <div class="text">
+      <ul>
+        <li>Deutschland: ca. 2,5 Billionen € Schulden</li>
+        <li>Risiken: Zinslast, Belastung zukünftiger Generationen</li>
+        <li>Chancen: Investitionen in Zukunft (z. B. Digitalisierung)</li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <canvas id="vergleichChart"></canvas>
+    </div>
+  </section>
+
+  <section class="slide" id="slide4">
+    <div class="headline">Zukunft & Lösungsansätze</div>
+    <div class="text">
+      <ul>
+        <li><strong>Langsame Erholung:</strong> Wachstum könnte helfen, die Schulden zu stabilisieren, aber ohne Maßnahmen bleibt die Verschuldung hoch.</li>
+        <li><strong>Austerität und soziale Spannungen:</strong> Sparmaßnahmen könnten zu Protesten und Unzufriedenheit führen.</li>
+        <li><strong>Wirtschaftliche Instabilität:</strong> Wenn die Schulden unkontrolliert wachsen, könnte es zu einer Finanzkrise kommen.</li>
+      </ul>
+    </div>
+    <div class="chart-container">
+      <h3>Prognose: Staatsverschuldung bis 2030</h3>
+      <canvas id="prognoseChart"></canvas>
+    </div>
+  </section>
+
+  <section class="slide" id="slide5">
+    <div class="headline">Quellen</div>
+    <div class="text" style="text-align: left; max-width: 900px;">
+      <ul>
+        <li>https://www.bundesfinanzministerium.de</li>
+        <li>https://de.statista.com/statistik/daten/studie/</li>
+        <li>https://www.gold.de/staatsverschuldung-deutschland/</li>
+        <li>https://www.tagesschau.de/wirtschaft/finanzen/</li>
+        <li>https://www.destatis.de/DE/Themen/Staat/Finanzen/</li>
+        <li>https://www.bpb.de/themen/wirtschaft/</li>
+        <li>https://wirtschaftslexikon.gabler.de/definition/staatsverschuldung-48619</li>
+        <li>https://finanztip.de/staatsverschuldung/</li>
+        <li>https://www.handelsblatt.com/thema/staatsverschuldung</li>
+        <li>https://www.focus.de/finanzen/boerse/staatsverschuldung</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
