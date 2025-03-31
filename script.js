@@ -15,7 +15,6 @@ function updateDebt() {
 }
 setInterval(updateDebt, 30);
 
-// Slides: Steuerung mit Tastatur & Touch
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -45,7 +44,6 @@ document.addEventListener('touchstart', () => {
 
 showSlide(currentSlide);
 
-// Diagramme
 window.addEventListener("load", () => {
   const ctx1 = document.getElementById("vergleichChart")?.getContext("2d");
   if (ctx1) {
@@ -61,25 +59,14 @@ window.addEventListener("load", () => {
         }]
       },
       options: {
-        maintainAspectRatio: false,
         responsive: true,
-        animation: { duration: 1500 },
         plugins: {
-          legend: { display: false },
           title: {
             display: true,
             text: "Staatsverschuldung im internationalen Vergleich",
             font: { size: 18 }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: { display: true, text: "% vom BIP" }
           },
-          x: {
-            title: { display: true, text: "Länder" }
-          }
+          legend: { display: false }
         }
       }
     });
@@ -98,16 +85,13 @@ window.addEventListener("load", () => {
       },
       options: {
         responsive: true,
-        animation: { duration: 1500 },
         plugins: {
           title: {
             display: true,
             text: "Verteilung Bundesausgaben (2024)",
             font: { size: 18 }
           },
-          legend: {
-            position: 'bottom'
-          }
+          legend: { position: 'bottom' }
         }
       }
     });
